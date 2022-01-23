@@ -1,0 +1,92 @@
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Covid19-QnA!</title>
+    <script src="https://kit.fontawesome.com/3337f22de3.js" crossorigin="anonymous"></script>
+    
+
+    <style>
+     
+      .form-control-borderless {  
+        border: none;
+        border-radius: 40px;
+        background-color: #f5fffa;  
+        box-shadow: 2.2px 4.5px 4.5px hsl(0deg 0% 0% / 0.43);
+      }  
+      .form-control-borderless:focus {  
+        border: none;  
+        outline: none;  
+        box-shadow: 2.2px 4.5px 4.5px hsl(0deg 0% 0% / 0.43);
+        background-color: #f5fffa; 
+        }
+        .card{
+          box-shadow: 2.2px 4.5px 4.5px hsl(0deg 0% 0% / 0.43);
+        }  
+        .image-box {
+          
+          background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) , url('https://cdn.pixabay.com/photo/2020/02/04/07/16/coronavirus-4817450__340.jpg');
+          /* Full height */
+            height: 100%;
+
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+            
+         }
+         
+
+        .bg-search{
+          background-color: #f5fffa; 
+        }
+
+        i:hover{
+          color: rgb(0, 68, 255);
+        }
+        .shadow{
+          box-shadow: 2.2px 4.5px 4.5px hsl(0deg 0% 0% / 0.43);
+        }
+        
+    </style>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  </head>
+  <body  >
+    <nav class="navbar fixed-top navbar-light bg-light shadow">
+      <a class="navbar-brand display-4 font-weight-bold" href="#">CovidQnA</a>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+
+   <footer class="page-footer font-small  pt-4">
+
+ 
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 ">For more info:
+    <a href="https://www.google.com/search?q=covid+news"> Covid-19</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
